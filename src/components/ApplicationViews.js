@@ -2,7 +2,7 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { PostForm } from "./posts/PostForm"
 import { Posts } from "./posts/Posts"
-
+import { Comments } from "./comments/comments"
 {/* <main style={{
             margin: "5rem 2rem",
             lineHeight: "1.75rem"
@@ -16,6 +16,9 @@ export const ApplicationViews = () => {
         </Route>
         <Route exact path="/posts/create">
             <PostForm />
+        </Route>
+        <Route exact path="/comments">
+            <Comments />
         </Route>
     </>
     )
